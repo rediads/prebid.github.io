@@ -16,6 +16,7 @@ safeframes_ok: false
 deals_supported: false
 floors_supported: true
 fpd_supported: true
+userIds: rediadsId
 ortb_blocking_supported: partial
 privacy_sandbox: no
 multiformat_supported: will-bid-on-one
@@ -81,3 +82,11 @@ The following fields are supported for First Party Data (FPD):
 - `ortb2.devices.locations parameters`
 
 For additional implementation or support, contact us at <support@rediads.com>.
+
+### User ID Support
+
+The Rediads bidder supports the `rediadsId` user ID submodule. To build both together:
+
+```bash
+gulp build --modules=rediadsBidAdapter,userId,rediadsIdSystem
+```
