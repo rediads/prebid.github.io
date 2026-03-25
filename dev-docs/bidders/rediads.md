@@ -27,11 +27,11 @@ sidebarType: 1
 
 {: .table .table-bordered .table-striped }
 
-| Name       | Scope    | Description                                                  | Example    | Type   |
-| ---------- | -------- | ------------------------------------------------------------ | ---------- | ------ |
-| account_id | required | Account ID generated on the Rediads Platform.                | `'123xyz'` | string |
+| Name       | Scope    | Description                                                  | Example      | Type   |
+| ---------- | -------- | ------------------------------------------------------------ | ------------ | ------ |
+| account_id | required | Account ID generated on the Rediads Platform.                | `'123xyz'`   | string |
 | endpoint   | optional | Only to be used if RediAds team provides you with one.       | `'bidding2'` | string |
-| slot       | optional | Unique identifier for the ad slot generated on the platform. | `'54321'` | string |
+| slot       | optional | Unique identifier for the ad slot generated on the platform. | `'54321'`    | string |
 
 ---
 
