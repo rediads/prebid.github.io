@@ -23,18 +23,19 @@ multiformat_supported: will-bid-on-one
 sidebarType: 1
 ---
 
-### Bid Params
+## Bid Params
 
 {: .table .table-bordered .table-striped }
-| Name         | Scope    | Description                                                                 | Example              | Type           |
-|--------------|----------|-----------------------------------------------------------------------------|----------------------|----------------|
-| account_id   | required | Account ID generated on the Rediads Platform.                               | '123xyz'             | string       |
-| endpoint     | optional | Only to be used if RediAds team provides you with one.                      | 'bidding2'        | string       |
-| slot         | optional | Unique identifier for the ad slot generated on the platform.                | '54321'              | string       |
+
+| Name       | Scope    | Description                                                  | Example    | Type   |
+| ---------- | -------- | ------------------------------------------------------------ | ---------- | ------ |
+| account_id | required | Account ID generated on the Rediads Platform.                | `'123xyz'` | string |
+| endpoint   | optional | Only to be used if RediAds team provides you with one.       | `'bidding2'` | string |
+| slot       | optional | Unique identifier for the ad slot generated on the platform. | `'54321'` | string |
 
 ---
 
-### Enabling Test Bids
+## Enabling Test Bids
 
 To enable test bids for the Rediads Bidder Adapter, append rediads-test-bids to the hash of the page URL.
 
@@ -47,9 +48,9 @@ This will activate test bids for debugging and validation purposes.
 
 ---
 
-### AdUnit Examples
+## AdUnit Examples
 
-#### AdUnit Format for Banner
+### AdUnit Format for Banner
 
 ```javascript
 var adUnits = [
@@ -73,7 +74,7 @@ var adUnits = [
 ];
 ```
 
-### First Party Data Support
+## First Party Data Support
 The following fields are supported for First Party Data (FPD):
 
 - `ortb2.site.*`
@@ -83,7 +84,7 @@ The following fields are supported for First Party Data (FPD):
 
 For additional implementation or support, contact us at <support@rediads.com>.
 
-### User ID Support
+## User ID Support
 
 The Rediads bidder supports the `rediadsId` user ID submodule. To build both together:
 
